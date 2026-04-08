@@ -1,0 +1,89 @@
+[
+    {
+        "title": "날씨에 따라 코디와 음악 등을 추천받는 날씨 추천 앱(WEB)",
+        "images": [
+            "/imgs/weather.png",
+            "/imgs/weather2.png",
+            "/imgs/weather3.png",
+            "/imgs/weather4.png",
+            "/imgs/weather5.png"
+
+        ],
+        "skills": [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ],
+        "site": "https://duajd3-lab.github.io/Weather-Mood/index.html",
+        "team": "개발자 4명",
+        "work": [ "코디 페이지 " , "날씨 API 연동"],
+        "features": [
+            "날씨 API 를 활용하여 실시간 으로 데이터를 받는 시스템",
+            "LocalStorage를 활용하여 데이터 연동하여 개발"
+        ], 
+        "troubleshooting": [
+            {
+                "problem": "처음 성별 선택 후 메인 페이지로 넘어갈때 날씨,캐릭터 등 각종 컨텐츠가 바로 뜨지 않음",
+                "solution": "common.js에 있는 날씨 데이터에 맞게 가공하여 기온 별 코디 캐릭터와 날씨에 어울리는 아이템을 추천해주는 함수를 성별 선택 후 메인 페이지로 넘어올때 바로 실행될 수 있도록 함수를 호출하였습니다.",
+                "result": "성능 개선"
+            },
+            {
+                "problem": "[코디 페이지]스크랩(별 상태) 후 팝업창을 닫았다가 다시 열면 스크랩(별 상태)가 초기화",
+                "solution": "모달(팝업창) 열 때 스크랩 상태를 항상 정확하게 초기화 후 반영되도록 forEach문 대신 includes() 사용과 localStorage 동기화를 하였습니다.",
+                "result": "성능 개선"
+            }
+        ]
+    },
+    {
+        "title": "사용자의 일정 관리 효율을 높이기 위한 TODOLIST",
+        "images": [
+            "/imgs/todolist.png"
+
+        ],
+        "skills": [
+            "REACT",
+            "SASS",
+            "ZUSTAND"
+        ],
+        "site": "http://react-todolist-zw2e.vercel.app",
+        "team": "개발자 1명",
+        "work": [ "전체 페이지" ],
+        "features": [
+            "server를 활용하여 실시간으로 추가, 수정, 삭제가 가능한 todolist"
+        ], 
+        "troubleshooting": [
+            {
+                "problem": "리스트가 많아질수록 렌더링 성능 저하 발생",
+                "solution": "불필요한 리렌더링 제거",
+                "result": "성능 개선"
+            }
+            
+        ]
+    },
+    {
+        "title": "PORTPOLIO",
+        "images": [
+            "/imgs/portpolio.png"
+
+        ],
+        "skills": [
+            "REACT",
+            "SASS",
+            "JSON"
+        ],
+        "site": "",
+        "team": "개발자 1명",
+        "work": [ "전체 페이지" ],
+        "features": [
+            "React와 Sass를 활용하여 포트폴리오 구성 "
+        ], 
+        "troubleshooting": [
+            {
+                "problem": "리스트가 많아질수록 렌더링 성능 저하 발생",
+                "solution": "불필요한 리렌더링 제거",
+                "result": "성능 개선"
+            }
+            
+        ]
+    }
+]

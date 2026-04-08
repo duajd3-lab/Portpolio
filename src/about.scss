@@ -1,0 +1,174 @@
+// about.scss
+@import url('./App.css');
+
+.static_box {
+  max-width: 1000px;
+  width: 90%;
+  margin: 80px 20px;
+  padding: 50px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* 초기 상태 */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+
+  background: linear-gradient(
+    180deg,
+    rgba(104, 169, 216, 0.2),
+    rgba(24, 21, 221, 0.2)
+  );
+
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-8px) scale(1.01);
+  }
+}
+
+/* 등장 상태 */
+.static_box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.pro_box {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  position: relative;
+  
+  justify-content: center;
+  
+}
+
+
+.profile img {
+  width: 180px;
+  height: 220px;
+  border-radius: 16px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  
+}
+
+.aboutBox{
+  margin-bottom: 300px;
+}
+
+
+.profile-txt {
+  line-height: 1.6;
+  color: #333;
+
+  p {
+    margin-bottom: 12px;
+  }
+
+  p > span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #111;
+  }
+
+  > span {
+    font-size: 26px;
+    font-weight: bold;
+
+    background: linear-gradient(
+      180deg,
+      rgba(0, 149, 255, 0.8),
+      rgba(5, 26, 255, 0.8)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+
+
+
+.value-simple {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.value-item {
+  padding: 15px 20px;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+
+  font-size: 15px;
+
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transform: translateX(8px);
+  }
+}
+
+.stack {
+  margin-left: 70px;
+  margin-top: 20px;
+
+  ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .pro_box {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .profile img {
+    width: 140px;
+    height: 180px;
+  }
+
+  .static_box {
+    padding: 30px;
+  }
+
+  .stack{
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  
+  
+}
+
+
+
+@media (min-width:901px) and (max-width:1330px){
+ .pro_box {
+    padding: 10px;
+    text-align: center;
+  }
+
+.static_box {
+    justify-content: flex-start
+}
+
+}

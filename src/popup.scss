@@ -1,0 +1,215 @@
+.container {
+    width: 60%;
+    height: 80vh;
+    overflow: auto;
+    background: rgb(210, 220, 224);
+    padding: 30px;
+
+    >span {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+
+.modal {
+    position: fixed;
+    left: 0%;
+    top: 0vh;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 20px;
+
+
+    .screen {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border-radius: 20px;
+
+    }
+
+
+}
+
+.details {
+    margin: 20px;
+
+
+    .skills {
+        display: flex;
+        gap: 10px;
+        margin-left: 20px;
+
+        >div {
+            color: rgba(78, 29, 255, 1);
+            background-color: rgba(131, 177, 214, 0.63);
+            width: 90px;
+            height: 30px;
+            border-radius: 20px;
+            padding: 5px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+
+
+
+.sec-1 {
+    display: flex;
+    padding-bottom: 10px;
+
+    gap: 10px;
+    >span {
+        font-weight: bold;
+    }
+
+    .tt2 {
+        padding-top: 20px;
+        display: flex;
+
+        >div>span {
+            font-weight: bold;
+        }
+
+        >.url {
+            margin-left: 30px;
+        }
+        >.tt-text{
+            margin-left: 20px;
+        }
+    }
+
+    .tt span {
+        font-weight: bold;
+    }
+    .tt ul{
+        list-style: none;
+        padding: 0;
+        >li{
+            border-bottom: 1px dashed black;
+            padding: 10px;
+
+        }
+    }
+}
+
+
+.tt3 {
+    padding-top: 20px;
+
+    >div>span {
+        font-weight: bold;
+    }
+
+}
+
+.sec-2 {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    gap: 30px;
+
+    >span {
+        font-weight: bold;
+    }
+
+    .tt2 span {
+        font-weight: bold;
+    }
+
+    .tt-text {
+        margin-left: 20px;
+    }
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.2s;
+}
+
+
+
+
+
+// 슬라이드 
+.swiper {
+    width: 80%;
+    margin: 10px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (min-width:901px) and (max-width:1330px){
+
+}
+
+
+@media (min-width:769px) and (max-width:900px){
+    
+}
+
+@media (max-width: 768px){
+.details .skills {
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    flex-direction: column;
+}
+    .sec-1 .tt2 > .url {
+    margin-left: 50px;
+    font-size: 9px;
+}
+
+.container > span {
+    font-weight: bold;
+    font-size: 20px;
+    /* margin: 10px; */
+}
+}
