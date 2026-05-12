@@ -52,7 +52,7 @@ function App() {
             </button>
           </div>
         </div>
-        {/* <Cards /> */}
+         <Cards /> 
       </div>
 
       <div className='sticky_menu'>
