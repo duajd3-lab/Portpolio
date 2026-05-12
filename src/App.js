@@ -39,8 +39,8 @@ function App() {
       <div className='box'>
         <div className='boxTxt'>
           <div className='title'>
-            {/* <h2>PORT <br /> FOLIO</h2> */}
-            {/* <p className="subtitle">FRONTEND DEVELOPER</p> */}
+            <h2>PORT <br /> FOLIO</h2> 
+            <p className="subtitle">FRONTEND DEVELOPER</p> 
             <p className="subtitle"> “지속적인 개선을 통해 성장하는 개발자 <br /> 김나영입니다.”</p>
           </div>
           <div className='btn'>
