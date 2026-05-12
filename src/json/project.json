@@ -34,21 +34,22 @@
             }
         ]
     },
+   
     {
-        "title": "사용자의 일정 관리 효율을 높이기 위한 TODOLIST",
+        "title": "PORTPOLIO",
         "images": [
-            "/imgs/todolist.png"
+            "/imgs/portpolio.png"
         ],
         "skills": [
             "REACT",
             "SASS",
-            "ZUSTAND"
+            "JSON"
         ],
-        "site": "http://react-todolist-zw2e.vercel.app",
+        "site": "https://portpolio-self-nine.vercel.app/",
         "team": "개발자 1명",
         "work": [ "전체 페이지" ],
         "features": [
-            "server를 활용하여 실시간으로 추가, 수정, 삭제가 가능한 todolist"
+            "React와 Sass를 활용하여 포트폴리오 구성 "
         ], 
         "troubleshooting": [
             {
@@ -60,20 +61,24 @@
         ]
     },
     {
-        "title": "PORTPOLIO",
+        "title": "AI를 활용한 매장관리프로그램",
         "images": [
-            "/imgs/portpolio.png"
+            "/imgs/storepilot.PNG"
         ],
         "skills": [
-            "REACT",
-            "SASS",
-            "JSON"
+            "Next.js",
+            "SCSS",
+            "NextAuth",
+            "Axios",
+            "MongoDB",
+            "OpenAi",
+            "ZUSTAND"
         ],
-        "site": "",
-        "team": "개발자 1명",
-        "work": [ "전체 페이지" ],
+        "site": "https://store-pilot-gold.vercel.app/",
+        "team": "개발자 5명",
+        "work": [ "[랜딩 페이지], ", "[메뉴 관리 페이지]"],
         "features": [
-            "React와 Sass를 활용하여 포트폴리오 구성 "
+            "재고 예측부터 근무표 자동 생성까지, 데이터 관리 가능한 로컬 LLM 기반 통합 솔루션. "
         ], 
         "troubleshooting": [
             {

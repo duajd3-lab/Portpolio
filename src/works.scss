@@ -8,12 +8,13 @@
   display: flex;
   padding: 40px;
   align-items: center;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
 }
 
 .mockup{
   position: relative;
-  width: 450px; // 원하는 mockup 가로 크기
+  width: 100%;     
+  max-width: 450px; // 원하는 mockup 가로 크기
   height: auto;
   cursor: pointer;
 }

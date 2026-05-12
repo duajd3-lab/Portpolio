@@ -2,13 +2,36 @@
     width: 60%;
     height: 80vh;
     overflow: auto;
-    background: rgb(210, 220, 224);
+    background: rgb(220, 222, 223);
     padding: 30px;
+    border-radius: 11px;
 
     >span {
         font-weight: bold;
         font-size: 20px;
         margin: 10px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        margin: 12px 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #565656;
+        border-radius: 999px;
+        border: 2px solid transparent;
+        background-clip: padding-box;
+
+        &:hover {
+            background: #417dca;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+        }
     }
 }
 
@@ -59,7 +82,8 @@
         display: flex;
         gap: 10px;
         margin-left: 20px;
-
+        flex-wrap: wrap;
+        
         >div {
             color: rgba(78, 29, 255, 1);
             background-color: rgba(131, 177, 214, 0.63);
@@ -97,7 +121,14 @@
 
         >.url {
             margin-left: 30px;
+
+            &:hover {
+            background: #becde0;
+            border-radius: 5px;
+            }
+
         }
+
         >.tt-text{
             margin-left: 20px;
         }
@@ -110,7 +141,7 @@
         list-style: none;
         padding: 0;
         >li{
-            border-bottom: 1px dashed black;
+            //border-bottom: 1px dashed black;
             padding: 10px;
 
         }
